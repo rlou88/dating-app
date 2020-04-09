@@ -15,5 +15,10 @@
 }
 
 ::ng-deep .customClass > a {
-  color: #f3969a;
+  color: #17205d;
+}
+
+.form-control:focus {
+  border-color: #acdced;
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
 }

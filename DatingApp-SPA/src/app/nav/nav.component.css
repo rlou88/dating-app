@@ -2,3 +2,15 @@
 .dropdown-item {
   cursor: pointer;
 }
+
+.navbar {
+  background: #acdced !important;
+}
+
+a {
+  color: #17205d !important;
+}
+
+a:hover {
+  color: #888888;
+}
