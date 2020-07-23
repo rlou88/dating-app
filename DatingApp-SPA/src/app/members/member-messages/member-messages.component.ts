@@ -13,7 +13,7 @@ import { tap } from 'rxjs/operators';
 export class MemberMessagesComponent implements OnInit {
   @Input() recipientId: number;
   messages: Message[];
-  newMessage: any = [];
+  newMessage: any = {};
 
   constructor(
     private userService: UserService,
@@ -43,7 +43,7 @@ export class MemberMessagesComponent implements OnInit {
     this.userService
       .sendMessage(this.authService.decodedToken.nameid, this.newMessage)
       .subscribe(
-        (message: any) => {
+        (message: Message) => {
           this.messages.unshift(message);
           this.newMessage.content = '';
         },
